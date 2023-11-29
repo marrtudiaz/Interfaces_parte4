@@ -1,0 +1,791 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+/*Estilos generales para el cuerpo de la página*/
+body {
+    max-width: 1280px;
+    padding: 0;
+    font-family: 'Lato';
+    background-color: black;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loading-logo {
+    width: 20%;
+    height: auto;
+    animation: spinSide 2s linear infinite;
+}
+
+.loading-text {
+    color: #fff;
+    margin: 10px;
+}
+
+
+@keyframes spinSide {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+
+/*Barra de navegación*/
+
+.navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    width: 1280px;
+    height: 120px;
+    background: linear-gradient(180deg, #5499F8 0%, #5499F8 87.91%, rgba(84, 153, 248, 0.00) 100%);;
+    z-index: 2000;
+    transition: top 0.3s ease;
+}
+
+.navbarContainer {
+    width: 1080px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto auto 32px auto;
+}
+
+.navbarContainer>* {
+    flex: 1;
+}
+
+.navbarMedio {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbarMedio .logo{
+    transform: translateY(3px);
+}
+.navbarDerecha {
+    display: flex;
+    justify-content: end;
+}
+
+
+/*Botón hamburguesa*/
+.hamburguesa {
+    width: 46px;
+    height: 39px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.hamburguesa rect {
+    transition: all 0.4s ease;
+    transform-origin: center;
+}
+
+/* Estilo para la animación de cruz */
+.hamburguesa.cruz #barra1 {
+    transform: rotate(45deg) translate(0.5px, 10px);
+}
+
+.hamburguesa.cruz #barra2 {
+    transition: 0.1s ease;
+    opacity: 0;
+    stroke-opacity: 0;
+}
+
+.hamburguesa.cruz #barra3 {
+    transform: rotate(-45deg) translate(6px, -10px);
+}
+
+.ocultar {
+    opacity: 0;
+    pointer-events: none;
+}
+
+/*Boton de Comprar*/
+.boton {
+    width: 200px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 111px;
+    border: 8px solid var(--2982-ff, #2982FF);
+    background: #FFE901;
+    box-shadow: 4px 5px 0px 0px #02187E;
+    cursor: pointer;
+}
+
+.btnAnimado {
+    transition: all 0.3s ease;
+}
+
+.btnAnimado:hover {
+    background-color: #fff200;
+    transform: scale(1.02);
+}
+
+.btnAnimado h4:hover {
+    color: blue;
+}
+
+.boton h4 {
+    margin: auto;
+    color: #02187E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 94.5%;
+}
+
+/*Capas*/
+.primerFondo {
+    margin-top: 100px;
+    width: 1280px;
+    height: 799px;
+    position: relative;
+}
+
+.parallax {
+    position: relative;
+    height: 850px;
+    overflow: hidden;
+}
+
+.layerInicial {
+    position: absolute;
+}
+
+.layer {
+    position: absolute;
+
+}
+
+.invisible {
+    opacity: 0;
+}
+
+.animacion-entrada {
+    animation: aparecer 1s cubic-bezier(0.42, 0, 0.58, 1);
+    /* Otras propiedades de estilo para la entrada */
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+        /* Otras propiedades de inicio */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        /* Otras propiedades para cuando está completamente visible */
+    }
+}
+
+/*Edificios*/
+#layer1 {
+    width: 1280px;
+    top: 0%;
+    z-index: 1;
+}
+
+#layer2 {
+    top: 2%;
+    z-index: 2;
+}
+
+#layer3 {
+    top: 60%;
+    left: 30%;
+    z-index: 2;
+}
+
+#layer4 {
+    top: 0%;
+    left: 70%;
+    z-index: 2;
+}
+
+/*Logo del juego*/
+#titulo {
+    width: 520px;
+    top: -1%;
+    right: 31%;
+    z-index: 3;
+}
+
+/*Spidermans*/
+#gwen {
+    top: 31.6%;
+    left: 7%;
+    z-index: 3;
+}
+
+#spidey {
+    top: 34%;
+    left: 31.5%;
+    z-index: 3;
+}
+
+#miles {
+    top: 26%;
+    left: 54.2%;
+    z-index: 2;
+}
+
+/*Telarañas*/
+#tela {
+    top: 31%;
+    z-index: 3;
+}
+
+#tela2 {
+    top: 32%;
+    left: 76.7%;
+    z-index: 3;
+}
+
+.fondoVioleta {
+    max-width: 1280px;
+}
+
+/*Parte con fondo violeta*/
+#secVioleta {
+    width: 1280px;
+    top: 83%;
+    z-index: 2;
+}
+
+.titulo {
+    color: white;
+    width: 47%;
+    top: 109%;
+    left: 8%;
+    z-index: 3;
+}
+
+.titulo h1 {
+    font-size: 60px;
+    margin: auto;
+    font-weight: 500;
+    line-height: 94.5%;
+}
+
+.titulo p {
+    font-size: 20px;
+    width: 95%;
+}
+
+
+#juego1 {
+    top: 148%;
+    left: 7.3%;
+    z-index: 3;
+}
+
+#duende {
+    top: 600px;
+    left: 56.5%;
+    z-index: 4;
+}
+
+/*Parte con fondo blanco*/
+#secBlanco {
+    width: 100%;
+    top: 172%;
+    z-index: 1;
+}
+
+.contenedorRecuadros {
+    display: flex;
+    top: 218%;
+    left: 6.3%;
+    z-index: 2;
+}
+
+.descripcion {
+    display: flex;
+    width: 26.2%;
+    margin: 0px 29px;
+    flex-direction: column;
+    opacity: 0;
+    /* Comienza oculto */
+    transform: translateY(20px);
+    /* Desplazado hacia abajo */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.descripcion img {
+    width: 332.96px;
+    height: 302.691px;
+}
+
+.descripcion.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.descripcion p {
+    font-size: 18.3px;
+}
+
+#card1 {
+    transition-delay: 0s;
+}
+
+#card2 {
+    transition-delay: 0.2s;
+}
+
+#card3 {
+    transition-delay: 0.4s;
+}
+
+.animacionCard {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+
+/*Parte con fondo de Gwen*/
+#rectGwen {
+    z-index: 4;
+    top: 294%;
+}
+
+
+.cardRuta {
+    width: 546px;
+    height: 326px;
+    position: absolute;
+    background-size: cover;
+    transition: all 0.2s ease-in;
+    z-index: 5;
+}
+
+.cardRuta:hover {
+    cursor: pointer;
+    scale: 1.1;
+    z-index: 10;
+}
+
+#ruta1 {
+    transform: rotate(-13.078deg);
+    top: 280%;
+    left: 6.7%;
+
+}
+
+#ruta2 {
+    transform: rotate(-26.474deg);
+    top: 303%;
+    left: 5.8%;
+
+}
+
+#ruta3 {
+    transform: rotate(-36.016deg);
+    top: 330%;
+    left: 8.4%;
+
+}
+
+/*Parte con fondo negro*/
+#secNegro {
+    top: 353%;
+    z-index: 3;
+}
+
+/*Contenedor de la seccion de vengadores*/
+.fondoPaisaje {
+    top: 406%;
+    left: 8%;
+}
+
+#titVengadores {
+    width: 38%;
+    top: 379%;
+    left: 8%;
+    color: #FFF;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 94.5%;
+    z-index: 3;
+}
+
+/*Capas del fondo de los vengadores*/
+#cielo {
+    z-index: 3;
+}
+
+#pasto {
+    z-index: 4;
+}
+
+#paisaje {
+    z-index: 3;
+}
+
+
+/*Capas de los vengadores*/
+.vengadores {
+    top: 405%;
+}
+
+#vengador1 {
+    width: 451px;
+    height: 591px;
+    top: -66px;
+    left: 71px;
+    z-index: 3;
+}
+
+#vengador2 {
+    width: 368px;
+    aspect-ratio: 733 / 923;
+    top: -196px;
+    left: 481px;
+    z-index: 3;
+}
+
+#vengador3 {
+    width: 410px;
+    height: 438px;
+    top: 115px;
+    left: 702px;
+    z-index: 3;
+}
+
+/*Segunda parte con fondo blanco*/
+#secBlanco2 {
+    top: 453%;
+    z-index: 2;
+}
+
+.contenedorDemos {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 100px;
+    top: 485%;
+    z-index: 4;
+}
+
+#titleContenedor {
+    font-size: 60px;
+}
+
+.demo {
+    position: relative;
+    grid-template-columns: auto 1fr;
+}
+
+.demoImgsContainer {
+    width: 552px;
+    height: 1650px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+}
+
+.demoImgs {
+    width: 100%;
+    height: 302px;
+    position: sticky;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.demoImgs img {
+    position: absolute;
+    width: 552px;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+.demoInfos {
+    position: relative;
+    left: 601px;
+    width: 467px;
+    height: 1605px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-sizing: border-box;
+
+}
+
+.demoInfos .info {
+    font-weight: 100;
+    transition: opacity 0.3s ease;
+}
+
+.info h1 {
+    margin-top: 0;
+    font-size: 37px;
+    font-weight: 100;
+    line-height: 94.5%;
+}
+
+.info p {
+    line-height: 94.5%;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+/*Segunda parte con fondo negro*/
+.tituloYBoton {
+    width: 60%;
+    position: absolute;
+    top: 730%;
+    left: 8%;
+    color: white;
+    font-size: 60px;
+}
+
+.tituloYBoton h1 {
+    margin: 0;
+    color: white;
+    font-weight: 400px;
+    font-size: 60px;
+}
+
+.tituloYBoton .boton {
+    width: 308px;
+    height: 66px;
+}
+
+/*Tercera parte con fondo blanco*/
+#secBlanco3 {
+    top: 758%;
+    z-index: 1;
+}
+
+/*Otras capas de spidermans*/
+.personajes {
+    display: flex;
+    position: absolute;
+    width: 1280px;
+    top: 782%;
+}
+
+
+.spidey2 {
+    left: 32%;
+}
+
+.miles2 {
+    left: 62%;
+}
+
+.gwen2 {
+    left: 17%;
+}
+.gwen2,
+.spidey2,
+.miles2 {
+    cursor: pointer;
+    z-index: 3;
+    transition: all 0.3s ease;
+}
+
+/*Otro fondo con edificios*/
+.fondoPreFooter {
+    width: 1280px;
+    height: 1488px;
+    background: linear-gradient(0deg, #F7E3D8 21.2%, #8FBEFC 81.48%);
+    top: 848%;
+}
+
+.title {
+    position: absolute;
+}
+
+.title h1 {
+    margin: 152px 232px 40px 232px;
+    color: #000;
+    text-align: center;
+    font-size: 59px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 94.5%;
+}
+
+/*Input para suscribirse*/
+.suscripcion {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    margin: 0px 250px 0px 250px;
+}
+
+.sub {
+    width: 75%;
+    font-size: 18px;
+    border-radius: 50px 0px 0px 50px;
+    border-top: 9px solid #2982FF;
+    border-bottom: 9px solid #2982FF;
+    border-left: 9px solid #2982FF;
+    background: #FFF;
+    box-shadow: 0px 5px 0px 0px #02187E;
+}
+
+.sub::placeholder {
+    position: absolute;
+    left: 5%;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+.btnSub {
+    width: 27%;
+    height: 104.2px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 0px 50px 50px 0px;
+    border: 9px solid #2982FF;
+    background: #FFE901;
+    box-shadow: 0px 5px 0px 0px #02187E
+}
+
+.advertencias {
+    display: flex;
+    flex-direction: column;
+}
+
+.advertencias p {
+    width: 47%;
+    font-size: 21px;
+    margin: 37px 400px 0px 300px;
+}
+
+.advertencias img {
+    width: 19%;
+    margin-top: 3%;
+    margin-left: 23.4%;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+/*Capas para el nuevo fondo con edificios*/
+#edificios {
+    margin-top: 60%;
+}
+
+/*Capas de spidermans en 2D*/
+#miles2D {
+    top: 87.3%;
+    left: 12.3%;
+}
+
+#gwen2D {
+    right: 53.6%;
+    top: 85%;
+}
+
+#spidey2D {
+    top: 78%;
+    right: 15%;
+}
+
+.imagenSonido {
+    cursor: pointer;
+}
+
+/*Fondo donde se encuentran las consolas que corren el juego*/
+.fondoConsolas {
+    display: flex;
+    width: 100%;
+    background: #242424;
+    height: 75px;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+}
+
+/*Fondo de los derechos legales y las redes sociales*/
+.fondoDerechosYRedes {
+    background: #5E5E5D;
+    height: 692px;
+}
+
+.derechosYRedes {
+    width: 64%;
+    letter-spacing: 3px;
+    font-size: 18px;
+    left: 8%;
+    top: 107%;
+    color: white;
+}
+
+#redes {
+    margin-top: 2%;
+}
+
+
+.inactive {
+    opacity: 0;
+}
+
+.active {
+    opacity: 1;
+}
+
+
+/* Variables */
+.personaje {
+    z-index: 10;
+    position: absolute;
+    width: 132.3px;
+    height: 170px;
+    background-image: url('../images/spritesheet/milesmorones.png');
+    transition: background-position 0.5s steps(6) infinite;
+}
+
+/* Animación al pasar el mouse */
+.personaje:hover {
+    animation-name: animacionHover;
+    animation-timing-function: steps(6);
+    animation-duration: 1s;
+    /* Reduce la duración para hacer la animación más rápida */
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+/* Keyframes */
+@keyframes animacionHover {
+    0% {
+        background-position: -9px;
+    }
+
+    /* posición inicial del spritesheet */
+    100% {
+        background-position: -818px;
+    }
+
+    /* Ajusta esta posición según el tamaño del frame */
+}

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spidey and his Amazing Friends</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <main>
+        <div class="loading-container">
+            <img class="loading-logo" src="images/layers/Araña Loader.png" alt="">
+            <div class="loading-text">
+                <span id="loading-progress">0</span>%
+            </div>
+        </div>
+        <div class="container">
+            <header>
+                <nav class="navbar">
+                    <div class="navbarContainer">
+                        <div>
+                            <svg class="hamburguesa" xmlns="http://www.w3.org/2000/svg" width="46" height="39"
+                                viewBox="0 0 46 39" fill="none">
+                                <g filter="url(#filter0_d_19_84)">
+                                    <rect id="barra1" x="2" y="2" width="38" height="8" rx="4" fill="#FFE901"
+                                        stroke="#2981FF" stroke-width="4" />
+                                    <rect id="barra2" x="2" y="13" width="38" height="8" rx="4" fill="#FFE901"
+                                        stroke="#2981FF" stroke-width="4" />
+                                    <rect id="barra3" x="2" y="24" width="38" height="8" rx="4" fill="#FFE901"
+                                        stroke="#2981FF" stroke-width="4" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_d_19_84" x="0" y="0" width="46" height="39"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="4" dy="5" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.00784314 0 0 0 0 0.0941176 0 0 0 0 0.494118 0 0 0 1 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_19_84" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_19_84"
+                                            result="shape" />
+                                    </filter>
+                                    <filter id="filter0_d_19_84" x="0" y="0" width="46" height="39"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feColorMatrix in="SourceAlpha" type="matrix"
+                                            values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                        <feOffset dx="4" dy="5" />
+                                        <feComposite in2="hardAlpha" operator="out" />
+                                        <feColorMatrix type="matrix"
+                                            values="0 0 0 0 0.00784314 0 0 0 0 0.0941176 0 0 0 0 0.494118 0 0 0 1 0" />
+                                        <feBlend mode="normal" in2="BackgroundImageFix"
+                                            result="effect1_dropShadow_19_84" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_19_84"
+                                            result="shape" />
+                                    </filter>
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="navbarMedio">
+                            <img class="logo" src="images/layers/Logo.svg" alt="Logo.svg">
+                        </div>
+                        <div class="navbarDerecha">
+                            <button class="boton btnAnimado">
+                                <h4>COMPRAR</h4>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="primerFondo">
+                <div class="parallax">
+                    <img class="layerInicial" id="layer1" data-speed="0.4"  src="images/fondos/Cielo.png" alt="Cielo.png">
+                    <img class="layerInicial invisible" id="layer2" data-speed="0.4" src="images/layers/Capa2.svg"
+                        alt="Capa2.svg">
+                    <img class="layerInicial invisible" id="layer3" data-speed="0.4" src="images/layers/Capa3.svg"
+                        alt="Capa3.svg">
+                    <img class="layerInicial invisible" id="layer4" data-speed="0.4" src="images/layers/Capa4.svg"
+                        alt="Capa4.svg">
+                    <img class="layerInicial invisible" id="titulo" data-speed="0.6" src="images/layers/Logo.svg"
+                        alt="Logo.svg">
+                    <img class="layerInicial invisible" id="gwen" data-speed="0.5" src="images/layers/Ghost-Spider.svg"
+                        alt="Ghost-Spider.svg">
+                    <img class="layerInicial invisible" id="spidey" data-speed="0.5" src="images/layers/Spidey.svg"
+                        alt="Spidey.svg">
+                    <img class="layerInicial invisible" id="miles" data-speed="0.6" src="images/layers/MilesMorales.svg"
+                        alt="MilesMorales.svg">
+                    <img class="layerInicial invisible" id="tela" data-speed="0.5" src="images/layers/Telaraña.svg"
+                        alt="Telaraña.svg">
+                    <img class="layerInicial invisible" id="tela2" data-speed="0.6" src="images/layers/Telaraña2.svg"
+                        alt="Telaraña2.svg">
+                </div>
+                <div class="fondoVioleta">
+                    <img class="layer" id="secVioleta" src="images/fondos/SecVioleta.svg" alt="SecVioleta.svg">
+                    <div class="layer titulo">
+                        <h1>Conoce a Spidey y sus sorprendentes amigos</h1>
+                        <p>Spidey, nuestro lanzador de telarañas favorito se une a Ghost-Spider (Gwen Stacey) y Miles
+                            Morales
+                            para
+                            formar el equipo de Spidey, con la ayuda del cómico pero leal robot de Spidey, TRACE-E. Si
+                            Spidey se
+                            encuentra en una situación difícil donde necesita aún más poder de superhéroe, tengan la
+                            seguridad
+                            de
+                            que un amigo de los Vengadores correrá para ayudar.</p>
+                    </div>
+                    <img class="layer" id="juego1" src="images/layers/Juego1.png" alt="Juego1.png">
+                    <img class="layer" id="duende" src="images/layers/Duende.svg" alt="Duende.svg">
+                    <img class="layer" id="secBlanco" src="images/fondos/SecBlanco.svg" alt="SecBlanco.svg">
+                </div>
+                <section class="layer contenedorRecuadros">
+                    <div class="descripcion" id="card1">
+                        <img src="images/juego/PeterSalto.png" alt="PeterSalto.png">
+                        <p>Peter Parker, un joven huérfano neoyorquino que adquiere superpoderes después de ser mordido
+                            por
+                            una
+                            araña radiactiva,​ y cuya ideología como héroe se ve reflejada primordialmente en la
+                            expresión
+                            ”un
+                            gran poder conlleva una gran responsabilidad”.</p>
+                    </div>
+                    <div class="descripcion" id="card2">
+                        <img src="images/juego/MilesCorrida.png" alt="MilesCorrida.png">
+                        <p>Tras la muerte de Peter Parker, es quien toma la identidad de
+                            <br>
+                            Spider-Man.
+                            <br>
+                            La elección del presidente Barack Obama en enero de 2009, fue una fuente de inspiración para
+                            el
+                            cambio de etnicidad de Spider-Man.
+                        </p>
+                    </div>
+                    <div class="descripcion" id="card3">
+                        <img src="images/juego/StacySalto.png" alt="StacySalto.png">
+                        <p>El personaje es una variante de El Hombre Araña, una versión de universo alternativo de Gwen
+                            Stacy.
+                            <br>
+                            Ella reside en la "Tierra-65", donde, en lugar de Peter Benjamin Parker, Gwen Stacy fue
+                            mordida
+                            por
+                            la Araña Radiactiva
+                        </p>
+                    </div>
+                </section>
+                <div>
+                    <div class="cards">
+                        <img class="cardRuta" id="ruta1" src="images/juego/ruta1.png" alt="ruta1.png">
+                        <img class="cardRuta" id="ruta2" src="images/juego/ruta2.png" alt="ruta2.png">
+                        <img class="cardRuta" id="ruta3" src="images/juego/ruta3.png" alt="ruta3.png">
+                    </div>
+                    <img class="layer" id="rectGwen" src="images/fondos/rectGwen.svg" alt="rectGwen.svg">
+                </div>
+                <div class="fondoNegro">
+                    <img class="layer" id="secNegro" src="images/fondos/SecNegro.svg" alt="SecNegro.svg">
+                    <h3 class="layer" id="titVengadores">Los vengadores acompañando tu aventura</h3>
+                    <div class="layer fondoPaisaje">
+                        <img class="layer" id="cielo" src="images/fondos/Cielo2.png" alt="Cielo2.png">
+                        <img class="layer" id="pasto" src="images/layers/Pasto.svg" alt="Pasto.svg">
+                        <img class="layer" id="paisaje" src="images/layers/Paisaje.svg" alt="Paisaje.svg">
+                        <img class="layer" id="vengador1" src="images/layers/Vengador1.png" alt="Vengador1.png">
+                        <img class="layer" id="vengador2" src="images/layers/Vengador2.png" alt="Vengador2.png">
+                        <img class="layer" id="vengador3" src="images/layers/Vengador3.png" alt="Vengador3.png">
+                    </div>
+                </div>
+                <img class="layer" id="secBlanco2" src="images/fondos/SecBlanco2.svg" alt="SecBlanco2.svg">
+                <div class="layer contenedorDemos">
+                    <h1 id="titleContenedor">Mas amigos, mas diversión!</h1>
+                    <div class="demo">
+                        <div class="demoImgsContainer">
+                            <div class="demoImgs">
+                                <img id="demoImg1" class="demoImg inactive active" src="images/juego/Demo1.png"
+                                    alt="Demo1.png">
+                                <img id="demoImg2" class="demoImg inactive" src="images/juego/Demo2.png"
+                                    alt="Demo2.png">
+                                <img id="demoImg3" class="demoImg inactive" src="images/juego/Demo3.png"
+                                    alt="Demo3.png">
+                                <img id="demoImg4" class="demoImg inactive" src="images/juego/Demo4.png"
+                                    alt="Demo4.png">
+                            </div>
+                        </div>
+                        <div class="demoInfos">
+                            <div id="info1" class="info inactive active">
+                                <h1>Más de 100 misiones para que juegues sin parar!</h1>
+                                <p>Tus padres, contentos. Explora el emocionante <br>mundo de Spider-Man con más de 100
+                                    misiones
+                                    que
+                                    te
+                                    mantendrán en constante acción y adrenalina. Enfréntate a desafíos únicos,
+                                    desentraña
+                                    misterios,
+                                    y
+                                    ayuda a Spider-Man a mantener la paz en la ciudad mientras te sumerges en la piel
+                                    del
+                                    héroe
+                                    arácnido. ¿Tienes lo que se necesita para superar todas las misiones y convertirte
+                                    en el
+                                    auténtico
+                                    Spider-Man?</p>
+                            </div>
+                            <div id="info2" class="info inactive">
+                                <h1>Escenas deslumbrantes que te sorprenderán</h1>
+                                <p>Sumérgete en un universo de maravillas visuales con 'Spider-Man: [nombre del juego]'.
+                                    Nuestro
+                                    juego
+                                    te llevará a través de escenas deslumbrantes que te dejarán sin aliento. Desde los
+                                    rascacielos
+                                    de
+                                    Nueva York hasta los intrincados detalles de la vida de Peter Parker, cada rincón de
+                                    este
+                                    mundo
+                                    te
+                                    sorprenderá. Prepárate para una experiencia única que desafiará tus expectativas y
+                                    te
+                                    transportará a
+                                    un asombroso viaje con el Hombre Araña.</p>
+                            </div>
+                            <div id="info3" class="info inactive">
+                                <h1>Cada misión te dará puntos que no sirven para nada!</h1>
+                                <p>Cada misión es una oportunidad para vivir la emocionante vida del Hombre Araña, y
+                                    aunque
+                                    los
+                                    puntos
+                                    que ganarás no tengan un propósito específico, la verdadera recompensa está en la
+                                    diversión
+                                    y la
+                                    inmersión que experimentarás en cada desafío. No necesitas acumular puntos para
+                                    sentirte
+                                    como un
+                                    auténtico superhéroe, ya que la adrenalina de salvar la ciudad y la emoción de las
+                                    acrobacias en <br>
+                                    el
+                                    aire son más que suficientes. ¡Así que prepárate para sumergirte en la acción y la
+                                    aventura,
+                                    sin
+                                    preocuparte por los puntos, y vive la experiencia definitiva de Spider-Man!</p>
+                            </div>
+                            <div id="info4" class="info inactive">
+                                <h1>Derrota a los villanos y diviértete</h1>
+                                <p>La diversión está asegurada mientras te enfrentas a los infames villanos de la ciudad
+                                    de
+                                    Nueva
+                                    York.
+                                    Enfréntate a desafíos épicos, combate a tus enemigos más temibles y disfruta de una
+                                    experiencia
+                                    llena de acción y emoción. Cada encuentro con los villanos te sumergirá en una
+                                    batalla
+                                    trepidante y
+                                    te llevará más cerca de convertirte en el auténtico Hombre Araña. Así que, ¿estás
+                                    listo
+                                    para
+                                    derrotar a los villanos y sumergirte en la aventura definitiva de Spider-Man?"</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tituloYBoton">
+                    <h1>"un gran poder conlleva una gran responsabilidad"</h1>
+                    <button class="boton btnAnimado">
+                        <h4>COMPRAR AHORA</h4>
+                    </button>
+                </div>
+                <img class="layer" id="secBlanco3" src="images/fondos/SecBlanco3.svg" alt="SecBlanco3.svg">
+                <div class="personajes">
+                    <img class="layer gwen2" src="images/layers/Ghost-Spider2.svg" alt="Ghost-Spider2.svg">
+                    <img class="layer spidey2" src="images/layers/Spidey2.svg" alt="Spidey2.svg">
+                    <img class="layer miles2" src="images/layers/MilesMorales2.svg" alt="MilesMorales2.svg">
+                </div>
+                <div class="layer fondoPreFooter">
+                    <div class="title">
+                        <h1>Lo último de SPIDEY Y SUS AMIGOS en tu buzón de correo electrónico</h1>
+                        <div class="suscripcion">
+                            <input type="email" class="sub" placeholder="Ingresa aquí tu correo">
+                            <button class="btnSub boton">SUSCRIBIRSE</button>
+                        </div>
+                        <div class="advertencias">
+                            <p>Al inscribirse en nuestra lista de correo, nos autoriza a ponernos en contacto con usted
+                                para
+                                enviarle
+                                ofertas y actualizaciones de marketing por correo electrónico, y también acepta nuestra
+                                <span class="subrayado">Política de
+                                    privacidad</span> y las <span class="subrayado">Condiciones del servicio.</span>
+                            </p>
+                            <img src="images/layers/Advertencias.png" alt="Advertencias.png">
+                        </div>
+                    </div>
+                    <img id="edificios" src="images/layers/Edificios.svg" alt="Edificios.svg">
+                    <div class="personaje" id="miles2D"></div>
+                    <!-- <img class="layer" id="miles2D" src="images/layers/Miles2D.svg" alt=""> -->
+                    <img class="layer" id="gwen2D" src="images/layers/Gwen2D.svg" alt="Gwen2D.svg">
+                    <img class="layer imagenSonido" id="spidey2D" src="images/layers/Spidey2D.svg" alt="Spidey2D.svg">
+                    <audio id="audio" src="" preload="auto"></audio>
+                    <div class="layer fondoConsolas">
+                        <img class="layer" id="consolas" src="images/layers/Consolas.svg" alt="Consolas.svg">
+                    </div>
+                    <div class="fondoDerechosYRedes">
+                        <div class="layer derechosYRedes">
+                            <p>©SEGA. All rights reserved. SEGA is registered in the U.S. Patent and Trademark Office.
+                                SEGA,
+                                the
+                                SEGA
+                                logo and SONIC SUPERSTARS are either registered trademarks or trademarks of SEGA
+                                CORPORATION
+                                or
+                                its
+                                affiliates. All other trademarks, logos and copyrights are property of their respective
+                                owners.©2023
+                                The
+                                LEGO Group. LEGO, the LEGO logo, the Minifigure, and the Brick and Knob configurations
+                                are
+                                trademarks
+                                and/or copyrights of the LEGO Group. All other marks and trademarks are the property of
+                                their
+                                respective
+                                owners. All rights reserved."PS", "PS5" and "PS4" are registered trademarks or
+                                trademarks of
+                                Sony
+                                Interactive Entertainment Inc.Microsoft, the Xbox Sphere mark, the Series X logo, Xbox
+                                One,
+                                and
+                                Xbox
+                                Series X are trademarks of the Microsoft group of companies.Nintendo Switch is a
+                                trademark
+                                of
+                                NintendoEPIC GAMES and <br>the EPIC STORE LOGO are trademarks or registered trademarks
+                                of
+                                EPIC
+                                GAMES
+                                INC.©2023 Valve Corporation. Steam and the Steam logo are trademarks and/or registered
+                                trademarks of
+                                Valve Corporation in the U.S. and/or other countries.The ESRB rating icons are
+                                registered
+                                trademarks
+                                of
+                                the Entertainment Software Association.
+                            </p>
+                            <p><span class="subrayado">COOKIE POLICY</span> <span class="subrayado">PRIVACY
+                                    POLICY</span>
+                            </p>
+                            <img id="redes" src="images/layers/redes.svg" alt="redes.svg">
+                        </div>
+                    </div>
+                    </img>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+    <script src="js/opcionales.js"></script>
+</body>
+
+</html>
